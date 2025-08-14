@@ -1,0 +1,112 @@
+{
+  "editor.semanticHighlighting.enabled": false,
+  "workbench.colorCustomizations": {
+    // Fondo principal del editor
+    "editor.background": "#021220",
+
+    // Línea donde está el cursor
+    "editor.lineHighlightBackground": "#001e3c",
+
+    // Barra lateral
+    "sideBar.background": "#081521",
+    "sideBar.foreground": "#D0D8E0",
+
+    // Panel inferior (terminal, problemas, etc.)
+    "panel.background": "#0A1B2A",
+    "panel.border": "#112B3C",
+
+    // Barra de actividad (iconos a la izquierda)
+    "activityBar.background": "#081521",
+    "activityBar.foreground": "#4da6ff",
+    "activityBar.activeBorder": "#1E90FF",
+
+    // Barra de estado inferior
+    "statusBar.background": "#081521",
+    "statusBar.foreground": "#D0D8E0",
+
+    // Pestañas
+    "tab.activeBackground": "#0F2A40",
+    "tab.inactiveBackground": "#081521",
+    "tab.activeForeground": "#FFFFFF",
+    "tab.inactiveForeground": "#AAB6C2",
+
+    // Color de selección
+    "editor.selectionBackground": "#1A3D5A",
+
+    // Números de línea
+    "editorLineNumber.foreground": "#4C6378",
+    "editorLineNumber.activeForeground": "#FFFFFF"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.control", // if, else, elif, while, for
+        "settings": {
+          "foreground": "#bf8df8" // rojo fuerte
+        }
+      },
+      {
+        "scope": "support.function.builtin.python", // funciones integradas como print, len, range
+        "settings": {
+          "foreground": "#ffe864" // dorado brillante
+        }
+      },
+      {
+        "scope": "source.python",
+        "settings": {
+          "foreground": "#93defc" // texto base más claro
+        }
+      },
+      {
+        "scope": "variable.parameter.function",
+        "settings": {
+          "foreground": "#7bcdfd" // amarillo más saturado para parámetros
+        }
+      },
+      {
+        "scope": "variable.other",
+        "settings": {
+          "foreground": "#72ffbd" // verde neón para variables
+        }
+      },
+      {
+        "scope": "constant.numeric", // números enteros y decimales
+        "settings": {
+          "foreground": "#66ff6e" // azul claro saturado
+        }
+      },
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#e69b70" // rosa para strings
+        }
+      },
+      {
+        "scope": "entity.name.function.python",
+        "settings": {
+          "foreground": "#fae04d" // dorado para nombres de funciones
+        }
+      }
+    ]
+  },
+  "editor.fontFamily": "'Cascadia Code Mono PL', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+  //"editor.fontLigatures": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontVariations": true,
+  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'liga'",
+  "window.zoomLevel": 0.5,
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": ["--indent-size=2"]
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
